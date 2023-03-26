@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210,46%,95%);
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.content-top {
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 9em;
+  margin-bottom: 9em;
+  border-radius: 10px;
+}
+
+.content-top img {
+  width: 100%;
+  border-top-left-radius: 10px;
+}
+
+.content-top .content-text {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  padding: 5%;
+}
+
+.content-top .content-text h1 {
+  display: block;
+  font-size: 13;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 5%;
+}
+
+.content-top .content-text p {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  text-align: justify;
+
+}
+
+.content-top .content-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content-top .content-bottom .content-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5%;
+  padding-bottom: 30px;
+}
+
+.content-top .content-bottom .content-profile img {
+  border-radius: 100%;
+
+}
+
+.content-top .content-bottom .content-profile .content-name {
+  padding: 0.5em;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+}
+
+.content-top .content-bottom .content-profile .content-name p {
+  margin: 0;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.content-top .content-bottom .content-profile .content-name span {
+  color: hsl(212, 23%, 69%);
+}
+
+.content-top .content-bottom .content-profile img {
+  width: 20%;
+}
+
+.content-top .content-bottom .content-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3em;
+  width: 30%;
+  padding-bottom: 30px;
+}
+.content-top .content-bottom .content-button .btn {
+  background-color: hsl(210,46%,95%);
+  border-radius: 50px;
+  padding: 8px;
+  margin-right: 4%;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.content-top .content-bottom .content-button .btn img{
+  width: 15px;
+  color: white;
+}
+@media screen and (max-width: 375px) {
+    body {
+      padding: 10px;
+      background: hsl(210,46%,95%);
+    }
+   .content-top{
+      display: block;
+      margin: 10px 0;
+      width: 80%;
+    }
+    .content-top .aside {
+      padding: 10px;
+    }
+    .content-top img {
+      width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+  }
+
+@media screen and (min-width: 830px) {
+    .body{
+        background: hsl(210,46%,95%);
+    }
+    .content-top {
+      display:flex;
+      flex-direction: row;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 1440px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .content-top .aside{
+        padding: 1px;
+    }
+    .content-top img{
+        width: 40%;
+        border-bottom-left-radius: 10px;       
+      }
+    .content-top .content-bottom .content-profile img{
+        width: 20%;
+    }
+    .content-top .content-bottom .content-button .btn{
+        cursor: pointer;
+    }
+  }
+  
